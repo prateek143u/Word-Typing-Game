@@ -1,0 +1,28 @@
+.input-form {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  width: 100vw;
+  max-width: 500px;
+}
+
+.input-field {
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.input-field::placeholder {
+  text-transform: capitalize;
+}
+
+.reset {
+  outline: none;
+  border: none;
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 1rem;
+}

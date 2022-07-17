@@ -1,0 +1,13 @@
+.timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.curr-time > span:nth-of-type(1),
+.best-score > span:nth-of-type(1) {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}

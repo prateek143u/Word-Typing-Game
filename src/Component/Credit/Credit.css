@@ -1,0 +1,79 @@
+.credit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  transition: all 1s ease;
+}
+
+.credit > input {
+  display: none;
+}
+
+.credit.closed {
+  animation-name: dismiss, hide;
+  animation-duration: 300ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-delay: 0s, 100ms;
+}
+
+.close-credit {
+  position: absolute;
+  top: 1.5rem;
+  right: 3.5rem;
+  font-size: 3rem;
+  color: #000;
+  cursor: pointer;
+}
+
+.credit-detail {
+  background: #fff;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  width: 70vw;
+  padding: 5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.credit-detail h1:nth-child(2) {
+  color: #033e9c;
+}
+
+.credit-detail > span {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.credit-detail h2:nth-child(4) {
+  color: #27ae60;
+}
+
+@keyframes dismiss {
+  0% {
+    opacity: 1;
+  }
+  90%,
+  100% {
+    opacity: 0;
+    font-size: 0.1px;
+    transform: scale(0);
+  }
+}
+
+@keyframes hide {
+  100% {
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+  }
+}
